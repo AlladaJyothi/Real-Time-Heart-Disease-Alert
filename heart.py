@@ -53,5 +53,5 @@ if st.button("Submit"):
         st.image(r"h-i.jfif",width=600)
     elif Heart==1:
         st.write('Disease')
-        st.image(r"h-i.jfif")
+        st.image("ef-im.jpg")
      
