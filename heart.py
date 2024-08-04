@@ -7,14 +7,14 @@ import pickle
 
 
 
-st.image(r"C:\Users\DELL\Pictures\inno_image.webp")
+st.image(r"inno_image.webp")
 name=st.title('Real-Time Heart Disease Alert')
-model=pickle.load(open(r'C:\\Users\\DELL\\Machine Learning\\PHASE-2\\heart.pkl',"rb"))
+model=pickle.load(open(r'heart.pkl',"rb"))
 
 import streamlit as st
 
 # URL of the background image
-background_image_url = "C:\\Users\\DELL\\Pictures\\he-im.jpg"
+background_image_url = "he-im.jpg"
 
 # Define the custom CSS
 page_bg_css = f"""
@@ -50,8 +50,8 @@ if st.button("Submit"):
 
     if Heart==0:
         st.write('No Disease')
-        st.image(r"C:\Users\DELL\Pictures\h-i.jfif",width=600)
+        st.image(r"h-i.jfif",width=600)
     elif Heart==1:
         st.write('Disease')
-        st.image(r"C:\Users\DELL\Pictures\ef-im.jpg")
+        st.image(r"ef-im.jpg")
      
